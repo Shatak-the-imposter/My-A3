@@ -37,7 +37,8 @@
 </head>
 
 <body class="font-manrope">
-    <header class="md:container mx-auto">
+    <!-- Header section -->
+    <header class="md:container mx-auto ">
         <!-- Navber section  -->
         <div class="navbar">
             <div class="navbar-start">
@@ -58,7 +59,7 @@
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-4xl font-bold">Hockey<span class="text-color-org">'</span>s</a>
+                <a class="btn btn-ghost text-2xl lg:text-4xl font-bold">Hockey<span class="text-color-org">'</span>s</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
@@ -76,19 +77,67 @@
                 <a class="btn">Get Ticket</a>
             </div>
         </div>
-        <!-- banner section -->
-        <div class="relative">
-            <div class=" flex justify-center">
-                    <img src="Images/1.png" alt="" srcset="">
+        <!-- banner section slider -->
+        <div class="relative mt4 lg:mt-14">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex gap-4 transform -translate-y-1/2 left-5 right-5 top-3/4">
+                        <a href="#slide2" class="btn btn-circle bg-transparent">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-transparent">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/banner2.jpg" class="w-full" />
+                    <div class="absolute flex gap-4  transform -translate-y-1/2 left-5 right-5 top-3/4">
+                        <a href="#slide1" class="btn btn-circle bg-transparent">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-transparent">❯</a>
+                    </div>
+                </div>
+
             </div>
-            <div class="bg-black mt-4 lg:mt-0 lg:max-w-[570px] rounded-2xl p-8 lg:absolute lg:top-[60%] lg:left-1/2 ">
-                <h4 class="font-bold text-2xl text-white">Meet all the heroes from the field</h4>
-                <p class="max-w-[500px] text-white">"Step into greatness and meet the heroes of the field. Our curated experience brings you face-to-face with industry legends, sharing insights and inspiring stories that define excellence. Unforgettable encounters await."</p>
+
+            <!-- this is banner badge -->
+            <div
+                class="bg-black mt-4 lg:mt-0 lg:max-w-[570px] rounded-2xl p-2 lg:p-8 lg:absolute lg:top-[60%] lg:left-1/2 ">
+                <h4 class="font-bold lg:text-2xl text-white">Meet all the heroes from the field</h4>
+                <p class="w-auto lg:max-w-[500px] sm:text-sm text-white">"Step into greatness and meet the heroes of the
+                    field. Our curated
+                    experience brings you face-to-face with industry legends, sharing insights and inspiring stories
+                    that define excellence. Unforgettable encounters await."</p>
             </div>
         </div>
-        
-
     </header>
+    <main>
+        <!-- Professional Hockeys Club section -->
+        <section class="md:container mx-auto">
+            <div class="border border-cyan-700 text-center mt-5 lg:mt-32">
+                <h2 class="font-bold lg:text-4xl mb-6">Professional Hockeys Club</h2>
+                <p class="mx-auto lg:max-w-[600px]">
+                    "Join the elite. Our Professional Hockey Club offers top-tier training, thrilling competitions, and
+                    a tight-knit community. Elevate your game with us!"</p>
+            </div>
+            <!-- radial progress  -->
+            <div class="mx-auto mt-5 lg:mt-20 flex justify-around border-cyan-500 ">
+                <div class="radial-progress text-red-600" style="--value:70; --size:12rem;" role="progressbar">
+                    <h3 class="font-bold text-black text-5xl">70%</h3>
+                </div>
+
+                <div class=" radial-progress text-green-600" style="--value:95; --size:12rem;" role="progressbar">
+                    <h3 class="font-bold text-black text-5xl">95%</h3>
+                </div>
+
+                <div class="radial-progress text-amber-600" style="--value:90; --size:12rem;" role="progressbar">
+                    <h3 class="font-bold text-black text-5xl">90%</h3>
+                </div>
+
+                <div class="radial-progress text-blue-600" style="--value:80; --size:12rem;" role="progressbar">
+                    <h3 class="font-bold text-black text-5xl">80%</h3>
+                </div>
+            </div>
+
+        </section>
+    </main>
 </body>
 
 </html>
