@@ -52,18 +52,18 @@
                     </div>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Home</a></li>
+                        <li><a class="text-color-org">Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Pages</a></li>
                         <li><a>Blog</a></li>
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-2xl lg:text-4xl font-bold">Hockey<span class="text-color-org">'</span>s</a>
+                <a class=" text-2xl lg:text-4xl font-bold">Hockey<span class="text-color-org">'</span>s</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
+                    <li><a class="text-color-org">Home</a></li>
                     <li><a>About</a></li>
                     <li><a>Pages</a></li>
                     <li><a>Blog</a></li>
@@ -201,7 +201,7 @@
                             <p>"Elevate young talents with our hockey junior program. Expert coaching, skill
                                 development, and a supportive community foster growth and success on the ice."</p>
                             <div class="card-actions">
-                                <button class="btn btn-primary font-bold">Register Now !</button>
+                                <button class="btn bg-color-org border-none text-white  font-bold">Register Now !</button>
                             </div>
                         </div>
                     </div>
@@ -215,7 +215,7 @@
                             <p>"Nurture budding talent with our Teenager Program. Tailored coaching, skill enhancement,
                                 and a supportive community empower young players on the ice."</p>
                             <div class="card-actions">
-                                <button class="btn btn-primary font-bold">Register Now !</button>
+                                <button class="btn bg-color-org border-none text-white  font-bold">Register Now !</button>
                             </div>
                         </div>
                     </div>
@@ -230,7 +230,7 @@
                                 "Elevate your game with our Professional Program. Expert coaching, advanced training,
                                 and tailored development to unleash your full hockey potential.</p>
                             <div class="card-actions">
-                                <button class="btn btn-primary font-bold">Register Now !</button>
+                                <button class="btn bg-color-org border-none text-white font-bold">Register Now !</button>
                             </div>
                         </div>
                     </div>
@@ -528,64 +528,123 @@
 
                 </div>
                 <!-- Form section  -->
-                <!-- name and email -->
-                <div class="flex flex-col lg:flex-row space-x-6">
+                <div>
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
-                        <div class="h-fit">
-                            <label class="form-control w-full max-w-xs">
+                        <div class="lg:col-span-1">
+                            <label class="form-control">
                                 <div class="label">
                                     <span class="label-text font-bold">Your Name</span>
                                 </div>
                                 <input type="text" placeholder="Enter your full name"
-                                    class="input input-bordered w-full max-w-xs " />
+                                    class="input input-bordered w-full max-w-xs" />
                             </label>
                         </div>
-                        <div class="h-fit">
-                            <label class="form-control w-full max-w-xs ">
+                        <div class="lg:col-span-1">
+                            <label class="form-control">
                                 <div class="label">
                                     <span class="label-text font-bold">Your Email</span>
                                 </div>
                                 <input type="email" placeholder="Enter your email"
-                                    class="input input-bordered w-full max-w-xs ">
+                                    class="input input-bordered w-full" />
                             </label>
                         </div>
-                        <div class="h-fit">
-                            <label class="form-control w-full max-w-xs ">
+                        <div class="lg:col-span-1">
+                            <label class="form-control">
                                 <div class="label">
                                     <span class="label-text font-bold">Subject</span>
                                 </div>
                                 <input type="text" placeholder="Enter your subject"
-                                    class="input input-bordered w-full max-w-xs " />
+                                    class="input input-bordered w-full max-w-xs" />
                             </label>
                         </div>
-                        <div class="h-fit">
-                            <label class="form-control w-full max-w-xs ">
+                        <div class="lg:col-span-1">
+                            <label class="form-control">
                                 <div class="label">
                                     <span class="label-text font-bold">Phone Number</span>
                                 </div>
                                 <input type="text" placeholder="Enter your phone number"
-                                    class="input input-bordered w-full max-w-xs ">
+                                    class="input input-bordered w-full max-w-xs" />
                             </label>
                         </div>
-                        <div class="lg:col-span-2 lg:row-span-3">
-                            <label class="form-control ">
-                                <div class="label col-span-2">
+                        <div class="lg:col-span-2">
+                            <label class="form-control">
+                                <div class="label">
                                     <span class="label-text font-bold">Message</span>
                                 </div>
-                                <input type="text" placeholder="Write your massage"
-                                    class="input input-bordered w-full max-w-xs ">
+                                <textarea placeholder="Write your message"
+                                    class="textarea textarea-bordered w-full lg:h-48"></textarea>
                             </label>
                         </div>
-                        <div class="lg:flex justify-center col-span-2 row-span-12"><button class="btn bg-color-org text-white font-bold">Send Message</button></div>
+                        <div class="lg:col-span-2">
+                            <button class="btn bg-color-org text-white font-bold w-full">Send Message</button>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </section>
         <!-- social media section  -->
         <section class="md:container mx-auto">
-
+            <div class="border border-gray-300 rounded-2xl bg-gray-300 text-center mt-5 lg:mt-32 mb-8 p-8">
+                <h2 class="font-bold lg:text-4xl mb-6">Social Media</h2>
+                <img class="mx-auto text-center" src="Images/Social.svg" alt="">
+            </div>
         </section>
     </main>
+    <!-- footer section  -->
+
+    <footer class="footer p-10 bg-black text-base-content lg:max-w-[1440px] mx-auto text-white">
+        <div class="text-center">
+            <h2 class="font-bold text-2xl lg:text-3xl mx-auto">Get In Touch</h2>
+            <p>"Connect with us today. <br>Questions, collaborations, or just to say hello. <br>Get in touch now!"</p>
+            <div class="flex items-center space-x-4 mx-auto">
+                <i class="fa-regular fa-message text-red-500"></i>
+                <h4>hockeys@support.com</h4>
+            </div>
+            <div class="flex items-center space-x-4 mx-auto">
+                <i class="fa-solid fa-phone text-red-500"></i>
+                <h4>(+62) 123-321-543</h4>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-6 items-center mx-auto">
+            <div>
+                <nav>
+                    <header class="footer-title">Company</header>
+                    <h4><a class="link link-hover">About us</a></h4>
+                    <h4><a class="link link-hover">Leadership</a></h4>
+                    <h4><a class="link link-hover">Careers</a></h4>
+                    <h4><a class="link link-hover">News & Article</a></h4>
+                    <h4><a class="link link-hover">Legal Notice</a></h4>
+                </nav>
+            </div>
+            <div>
+                <nav>
+                    <header class="footer-title">Support</header>
+                    <h4><a class="link link-hover">Help Center</a></h4>
+                    <h4><a class="link link-hover">FAQ</a></h4>
+                    <h4><a class="link link-hover">Ticket Support</a></h4>
+                    <h4><a class="link link-hover">Contact Us</a></h4>
+                </nav>
+            </div>
+
+
+            <div class="col-span-2 lg:col-span-1">
+                <nav >
+                    <header class="footer-title">Services</header>
+                    <h4><a class="link link-hover">Academy</a></h4>
+                    <h4><a class="link link-hover">Group Lesson</a></h4>
+                    <h4><a class="link link-hover">Private Lesson</a></h4>
+                    <h4><a class="link link-hover">Hockeys for kids</a></h4>
+                    <h4><a class="link link-hover">Hockeys for Adult</a></h4>
+                </nav>
+            </div>
+
+        </div>
+
+    </footer>
+
+
 </body>
 
 </html>
